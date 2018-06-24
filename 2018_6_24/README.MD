@@ -155,6 +155,6 @@ void merge(LNode * A, LNode *B, LNode  *&C )
 
 [Sublime插件：Git篇](https://www.jianshu.com/p/3a8555c273d8)
 
-[Sublime 小技巧：文本自动换行显示？](Sublime 小技巧：文本自动换行显示？)
+[Sublime 小技巧：文本自动换行显示？](https://www.jianshu.com/p/c75d21d2e967)
 
 [Sublime插件：Markdown篇](https://www.jianshu.com/p/aa30cc25c91b)
