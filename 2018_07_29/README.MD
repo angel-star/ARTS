@@ -87,6 +87,28 @@ void printmax(int A[][maxSize], int m, int n){
 
 
 ```
+# Review
+【如何构造一个可以自主思考的机器（第二部分）】[How to make an idea machine, part two](https://towardsdatascience.com/how-to-make-an-idea-machine-part-two-24ba330508d6)
+
+
+
+
+[在上周的 Review](https://github.com/angel-star/ARTS/tree/master/2018_07_22#review)的部分中作者定义了从数据中发现的概念，概述了发现过程目前是如何非常低效的，并提出了一个软件解决方案，用于自动化和加速跨所有行业的发现。
+
+
+在diss了Excel，Tableau，SAS这几个软件后，吹嘘自己tag.cortex platform的平台，介绍它们是用的是专家领域的语言，这样可以把用户在使用过程中所表现出来的"惧怕犯错"降到最低。
+
+
+剩下几部分作者分别介绍了自己的平台，谈了谈协议，和两个比较重要的问题：领域专家要深度理解得到的答案、平台必须要兼容任何数据源。
+
+最后抛出了几个比较重要并没有讨论或者没有被解决的问题：
+
+  
+  - Using the tag.cortex platform as an API
+  - Sharing of reports and collaboration between domain experts
+  - Reproducibility of reports and analyses
+  - Extending analysis functionality with the tag.algo SDK
+  - Graph structures and sequences
 
 
 
