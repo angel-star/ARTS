@@ -79,6 +79,34 @@ public:
 
 
 # Review
+【如何构造一个可以自主思考的机器（第一部分）】[How to make an idea machine, part one](https://towardsdatascience.com/how-to-make-an-idea-machine-part-one-46b97bacd6ee)
+
+
+
+
+本文内容概要：
+
+> “Give a person a discovery from data, and they will innovate for a day. Teach a person to make discoveries from data, and they will innovate for a lifetime.” — Ancient Data Science Proverb
+
+
+>  we can’t train enough data scientists to meet even today’s demand, and the size and variety of data being collected by organizations is increasing exponentially by the minute. Simply training more data scientists will not solve this problem
+
+这就是作者提出这个问题的主要原因
+
+根据过去在数据工作的经验，总结出了`the greatest probability of producing a high-impact discovery comes from repeatedly connecting the right person with the right information.`这样的经验，在给出两个合适人选后，
+
+随后提出了三个问题（`Three major problems are evident in this process`）：
+
+- Time.
+- Limited resources
+- Giving up too early.
+
+最后总结出"低效流程（通常）的解决方案是自动化"
+
+并顺便介绍了一下他关于本次命题的第二部分的文章介绍：
+> In part two, I provide specific details on how creative software design and architecture can automate a significant portion of the bottlenecks described above — accelerating discovery by an order of magnitude — for any data source. And just like other processes have been improved by automation, it feels like magic.
+
+这个文章下次再带给大家。
 
 
 # Technique
