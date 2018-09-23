@@ -1,3 +1,84 @@
+# Algorithm
+
+[892. Surface Area of 3D Shapes](https://leetcode.com/contest/weekly-contest-99/problems/surface-area-of-3d-shapes/)
+
+题目描述：
+
+英文：
+On a `N  * N`  grid, we place some `1 * 1 * 1` cubes.
+
+Each value `v = grid[i][j]` represents a tower of v cubes placed on top of grid cell `(i, j)`.
+
+Return the total surface area of the resulting shapes.
+
+中文：
+给定一个整数数组 A，对于每个整数 A[i]，我们可以选择任意 x 满足 -K <= x <= K，并将 x 加到 A[i] 中。
+
+在此过程之后，我们得到一些数组 B。
+
+返回 B 的最大值和 B 的最小值之间可能存在的最小差值。
+
+**Example 1:**
+
+>Input: [[2]]
+
+>Output: 10
+
+**Example 2:**
+
+>Input: [[1,2],[3,4]]
+
+>Output: 34
+
+
+**Example 3:**
+
+>Input: [[1,0],[0,2]]
+
+>Output: 16
+
+**Example 4:**
+
+>Input: [[1,1,1],[1,0,1],[1,1,1]]
+
+>Output: 32
+
+**Example 5:**
+
+>Input: [[2,2,2],[2,1,2],[2,2,2]]
+
+>Output: 46
+
+
+```c++
+
+class Solution {
+    public int surfaceArea(int[][] grid) {
+        int[] dr = new int[]{0, 1, 0, -1};
+        int[] dc = new int[]{1, 0, -1, 0};
+
+        int N = grid.length;
+        int ans = 0;
+
+        for (int r = 0; r < N; ++r)
+            for (int c = 0; c < N; ++c)
+                if (grid[r][c] > 0) {
+                    ans += 2;
+                    for (int k = 0; k < 4; ++k) {
+                        int nr = r + dr[k];
+                        int nc = c + dc[k];
+                        int nv = 0;
+                        if (0 <= nr && nr < N && 0 <= nc && nc < N)
+                            nv = grid[nr][nc];
+
+                        ans += Math.max(grid[r][c] - nv, 0);
+                    }
+                }
+
+        return ans;
+    }
+}
+```
 
 # Review
 [Python for data science : Part 4](https://towardsdatascience.com/python-for-data-science-part-4-6087cb811a29)
@@ -27,3 +108,9 @@
 
 今天这篇文章就带领大家进行了简单的推导，但是个人觉得过程有些简略并且逻辑不够严谨，今后如果有合适的机会希望自己写出一篇系统的讲解来和大家一起进步。
 
+# Share
+最近遇到了一个问题，关于谷歌浏览器（chrome）
+就是在win端使用浏览器的时候，可以用固定标签页的方式让用户在下次打开浏览器时也自动打开这些固定标签页。但是在mac端并不可以，今天就遇到了这个问题导致很多标签页丢失了，查了一下发现这个的解决方案 
+https://www.v2ex.com/t/269601
+
+那就是在mac端的时候可以采用 command+Q 的方式来关闭浏览器，这样下次就可以打开之前并没有关闭的标签页（非固定的也是一样），这里的机制也许就像上文中所说的一样，如果直接点击红色关闭按钮，默认是把所有的标签页删除（而且这里的关闭记录并不会被保存在历史记录中，只有这点和专门关闭标签页是不一样的）。
